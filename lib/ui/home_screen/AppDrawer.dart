@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_assignments/buisness_logic/blocs/authentication_bloc.dart';
+import 'package:flutter_assignments/buisness_logic/blocs/auth_bloc/authentication_bloc.dart';
 import 'package:flutter_assignments/ui/profile_screen/profile_screen.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -19,7 +19,8 @@ class AppDrawer extends StatelessWidget {
               width:  MediaQuery.of(context).size.width*0.7,
                 height: MediaQuery.of(context).size.height *.35,
                 child: Stack(children: [
-                  Center(child: Image.network(bloc.userModel.profilePicURL!,fit: BoxFit.cover,)),
+                  Center(child: Image.network(bloc.userModel.profilePicURL!,fit: BoxFit.cover,width:  MediaQuery.of(context).size.width*0.7,
+                    height: MediaQuery.of(context).size.height *.35,)),
                   Positioned(
                       bottom: 20,
                       left: 20,
@@ -28,7 +29,7 @@ class AppDrawer extends StatelessWidget {
 
 
         ListTile(leading: Icon(Icons.person,color: Colors.black,),
-        onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => ProfileScreen(bloc.userModel),)),
+        onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => ProfileScreen(bloc.userModel,true),)),
         title: Text('My Profile'),trailing: Icon(Icons.keyboard_arrow_right_sharp,color: Colors.black,),),
         Divider(),
 
