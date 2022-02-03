@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "417936744443",
+    "project_id": "connectingpeople-a0ce0",
+    "storage_bucket": "connectingpeople-a0ce0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:417936744443:android:e53c7d1649003f21ecf55e",
+        "android_client_info": {
+          "package_name": "com.app.flutter_assignments"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "417936744443-7g4lhbppr49b0khhvtlgf3ff83mo7ho7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCeHkDPFbHpjFLM5b7A-i4MEbl6Ixvvt5Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "417936744443-7g4lhbppr49b0khhvtlgf3ff83mo7ho7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
